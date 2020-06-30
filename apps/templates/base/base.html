@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        {% block navar %}
+        {% block navbar %}
         <div class="bs-docs-section clearfix">
             <div class="row">
                 <div class="col-lg-12">
@@ -26,21 +26,21 @@
                                         <li class="dropdown">
                                             <a href="#" class="" data-toggle="dropdown" role="button" aria-expanded="false">Mascotas<span class= "caret"></span></a>
                                             <ul class="dropdown-menu" role="menu">
-                                                <li><a class="dropdown-item" href="#">Registrar</a></li>
-                                                <li><a href="#">Listar</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'mascota_crear' %}">Registrar</a></li>
+                                                <li><a href="{% url 'mascota_listar' %}">Listar</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Adopciones<span class= "caret"></span></a>
                                             <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Solicitar</a></li>
-                                                <li><a href="#">Listar Solicitudes</a></li>
+                                                <li><a href="{% url 'solicitud_crear' %}">Solicitar</a></li>
+                                                <li><a href="{% url 'solicitud_listar' %}">Listar Solicitudes</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Opciones<span class= "caret"></span></a>
                                             <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Salir</a></li>
+                                                <li><a href="{% url 'logout' %}">Salir</a></li>
                                             </ul>
                                         </li>
                                     </ul>
